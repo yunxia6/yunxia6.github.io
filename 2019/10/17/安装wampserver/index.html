@@ -29,64 +29,32 @@
 	</header>
 
 	<main>
-		<h1>Archive</h1>
-
-
-
-
-
-<ul class="archive">
+		<article>
 	
+		<h1></h1>
 	
-		<li class="archive__year archive__expendable ">
-			<span>2019</span>
-			<ul>
-				
-					<li class="archive__month archive__expendable">
-						<span>October</span>
-						<ul>
-							
-								<li class="archive__entry"><a href="/2019/10/17/注意事项/"></a></li>
-							
-								<li class="archive__entry"><a href="/2019/10/17/安装wampserver/"></a></li>
-							
-						</ul>
-					</li>
-
-				
-					<li class="archive__month archive__expendable">
-						<span>September</span>
-						<ul>
-							
-								<li class="archive__entry"><a href="/2019/09/26/PHP语法/"></a></li>
-							
-								<li class="archive__entry"><a href="/2019/09/25/第一步/"></a></li>
-							
-								<li class="archive__entry"><a href="/2019/09/23/#PHP学习笔记/"></a></li>
-							
-								<li class="archive__entry"><a href="/2019/09/22/abcd/">abcd</a></li>
-							
-								<li class="archive__entry"><a href="/2019/09/20/kl/"></a></li>
-							
-						</ul>
-					</li>
-
-				
-			</ul>
-		</li>
+	<div class="article__infos">
+		<span class="article__date">2019-10-17</span><br>
 		
+		
+	</div>
+
 	
+
+	
+		<h2 id="出现的错误"><a href="#出现的错误" class="headerlink" title="出现的错误"></a>出现的错误</h2><ul>
+<li>在官网上下载，从wampserver开始点击点击“Download（或者下载，具体看网页语言）”，一般位置为导航第二个。<br>选择和操作系统匹配的位数（32位/64位），进行下载。“Sourceforge.”-&gt;点击“Summary”-&gt;“Download”<br>然后选择安装路径时我选了D盘，随后页面出现了提示某某作为wampserver的默认浏览器。我想用火狐或者是goole，安装好后，我点击wampserver竟然说“由于找不到msvcr110.dll,无法继续执行代码,重新安装程序可能会解决此问题“”。想哭~~<br>解决办法是安装Visual C++，安装Visual之后把wampserver卸载再重新安装。（如果不卸载wampserver，wampserver图标变绿但点不动）</li>
+<li>安装之后我都是照着这个博客做的<a href="https://blog.csdn.net/qq_41866776/article/details/92850242，强烈推荐。" target="_blank" rel="noopener">https://blog.csdn.net/qq_41866776/article/details/92850242，强烈推荐。</a></li>
 </ul>
 
-<script>
-	const expandables = document.querySelectorAll('.archive__expendable')
-	for(let i = 0; i < expandables.length; i++) {
-		expandables[i].addEventListener('click', (e) => {
-			e.stopPropagation()
-			expandables[i].classList.toggle('archive__expendable_collapsed')
-		})
-	}
-</script>
+	
+
+	
+		<span class="different-posts"><a href="/2019/10/17/安装wampserver/" onclick="window.history.go(-1); return false;">⬅️ Go back </a></span>
+
+	
+
+</article>
 
 	</main>
 
