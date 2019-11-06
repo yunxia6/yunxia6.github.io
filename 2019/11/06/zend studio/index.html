@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head><meta name="generator" content="Hexo 3.9.0">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="theme-color" content="#33474d">
+	<title>Hexo</title>
+	<link rel="stylesheet" href="/css/style.css">
+	
+      <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+    
+</head>
+
+<body>
+
+	<header class="header">
+		<nav class="header__nav">
+			
+				<a href="/archives" class="header__link">Archive</a>
+			
+				<a href="/tags" class="header__link">Tags</a>
+			
+				<a href="/atom.xml" class="header__link">RSS</a>
+			
+		</nav>
+		<h1 class="header__title"><a href="/">Hexo</a></h1>
+		<h2 class="header__subtitle"></h2>
+	</header>
+
+	<main>
+		<article>
+	
+		<h1></h1>
+	
+	<div class="article__infos">
+		<span class="article__date">2019-11-06</span><br>
+		
+		
+	</div>
+
+	
+
+	
+		<p>#使用zend studio遇到的问题</p>
+<ul>
+<li><p>zend studio下载后，本来想把Wampserver和zend studio结合。错误如下：我是先在下载Wampserver时的默认浏览器上输入命令”<a href="http://localhost:8080/&quot;，可是浏览器上显示index.of/和一排目录，点击最下面的WWW出现了Wampserver标志，不知道到底错没错，用zend" target="_blank" rel="noopener">http://localhost:8080/&quot;，可是浏览器上显示index.of/和一排目录，点击最下面的WWW出现了Wampserver标志，不知道到底错没错，用zend</a> studio编译的代码在浏览器也显示不出来。</p>
+</li>
+<li><p>所以请教了一下大佬，首先：打开phpstudy,开启Apache服务。</p>
+</li>
+<li><p>（1）搭建本地站点：<br>安装完成后源码文件夹是WWW，将你的源码放置在这个文件夹下<br>（2）配置PHPstudy：<br>我们把站点文件拷贝好之后，还需要配置一下PHPstudy，让其指向到我们的本地网站，打开PHPstudy，选择其他选择菜单，进入站点域名管理（这步可以忽略，默认访问为：127.0.0.1即可）<br>主要是网站目录，一定要选择我们刚才建立的站点目录，其它都不用管，点击“保存设置并生成配置文件”。<br>（3）配置hosts文件：因为上面我们默认的是<a href="http://www.phpStudy.net" target="_blank" rel="noopener">www.phpStudy.net</a> 域名，所以这里我们也要做一下hosts文件配置指向一下，打开PHPstudy，选择其它选项菜单，打开hosts，编辑或者添加如下代码:</p>
+</li>
+<li><p>#localhost</p>
+</li>
+</ul>
+<p>127.0.0.1 localhost<br>127.0.0.1 phpStudy.net<br>127.0.0.1 <a href="http://www.phpStudy.net" target="_blank" rel="noopener">www.phpStudy.net</a></p>
+<p>  让本地ip指向域名</p>
+<ul>
+<li><p>我在zend studio上编译的代码复制放到phpstudy的www目录下，最后在浏览器输入：localhost  /文件名（带后缀）或者输入：127.0.0.1/文件名</p>
+</li>
+<li><p>phpstudy的Apache启动不了，查了好多资料，右键点击phpstudy以管理员身份运行，Apache就可以开启了。</p>
+</li>
+</ul>
+
+	
+
+	
+		<span class="different-posts"><a href="/2019/11/06/zend studio/" onclick="window.history.go(-1); return false;">⬅️ Go back </a></span>
+
+	
+
+</article>
+
+	</main>
+
+	<footer class="footer">
+	<div class="footer-content">
+		
+	      <div class="footer__element">
+	<p>Hi there, <br>welcome to my Blog glad you found it. Have a look around, will you?</p>
+</div>
+
+	    
+	      <div class="footer__element">
+	<h5>Check out</h5>
+	<ul class="footer-links">
+		<li class="footer-links__link"><a href="/archives">Archive</a></li>
+		
+		  <li class="footer-links__link"><a href="/atom.xml">RSS</a></li>
+	    
+		<li class="footer-links__link"><a href="/about">about page</a></li>
+		<li class="footer-links__link"><a href="/tags">Tags</a></li>
+		<li class="footer-links__link"><a href="/categories">Categories</a></li>
+	</ul>
+</div>
+
+	    
+
+		<div class="footer-credit">
+			<span>© 2019 John Doe | Powered by <a href="https://hexo.io/">Hexo</a> | Theme <a href="https://github.com/HoverBaum/meilidu-hexo">MeiliDu</a></span>
+		</div>
+
+	</div>
+
+
+</footer>
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/nico.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"react":{"opacity":0.7}});</script></body>
+
+</html>
